@@ -20,3 +20,7 @@
                     return SCISSORS;
                 }
             }
+
+
+                // let player input their choice
+        let playerSelection= (prompt("Select your choice among ROCK, PAPER, SCISSORS", ''));
