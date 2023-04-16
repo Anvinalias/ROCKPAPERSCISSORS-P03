@@ -82,3 +82,21 @@
                 console.log(playerSelection);
                 let computerSelection=getComputerChoice();
                 console.log(computerSelection);
+
+            // get final result of the game
+        function score()
+        {
+          if (playerScore>computerScore)
+          {
+            console.log("You won the game!");
+          }
+          else if(playerScore<computerScore)
+          {      
+            console.log("You lose! Computer won the game.");
+          }
+          else if(playerScore==computerScore)
+          {
+            console.log("It's a draw");
+          }
+        }
+        score();
