@@ -1,17 +1,16 @@
 function game()
     { 
-    
-        // play 5 rounds
-        for(let i=1;i<=5;i++)
+        // set initial values of score to 0 
+        let computerScore = 0;
+        let playerScore = 0;
 
-        { 
-    // set initial values of score to 0 
-    let computerScore = 0;
-    let playerScore = 0;
-    
-    const ROCK= "ROCK";
-    const PAPER="PAPER";
-    const SCISSORS="SCISSORS";
+        // play 5 rounds
+      for(let i=1;i<=5;i++)
+
+      {   
+        const ROCK= "ROCK";
+        const PAPER="PAPER";
+        const SCISSORS="SCISSORS";
 
         // let computer choose randomly
         function getComputerChoice()
@@ -31,8 +30,8 @@ function game()
                     return SCISSORS;
                 }
             }
-
-            function playRound(playerSelection,computerSelection)
+            // check both choices, print outcome and increment score accordingly
+        function playRound(playerSelection,computerSelection)
             {
                 if (playerSelection==ROCK && computerSelection==ROCK)
                 {
@@ -77,20 +76,20 @@ function game()
                     return("YOU WON! SCISSORS BEATS PAPER");
                 }
             }
-
-
-                // let player input their choice
-        let playerSelection= (prompt("Select your choice among ROCK, PAPER, SCISSORS", ''));
+            // let player input their choice
+            let playerSelection= (prompt("Select your choice among ROCK, PAPER, SCISSORS", ''));
         // make input space-insensitive.
         // make input case-insensitive by converting to uppercase.
         playerSelection=playerSelection.replace(/\s/g,'').toUpperCase();
-                // print both choices
-                console.log("Player choose:");
-                console.log(playerSelection);
-                let computerSelection=getComputerChoice();
-                console.log(computerSelection);
-
-            // get final result of the game
+        // print both choices
+        console.log("Player choose:");
+        console.log(playerSelection);
+        let computerSelection=getComputerChoice();
+        console.log(computerSelection);
+        // function call and argument passing
+        console.log(playRound(playerSelection,computerSelection));  
+        
+        // get final result of the game
         function score()
         {
           if (playerScore>computerScore)
@@ -106,9 +105,9 @@ function game()
             console.log("It's a draw");
           }
         }
-    }
+      }
         score();
-               // playagain?
+        // playagain?
        console.log("To play again refresh or press F5");
     }
     game();
