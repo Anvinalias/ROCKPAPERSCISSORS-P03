@@ -1,8 +1,8 @@
-# ROCKPAPERSCISSOR-P03
+# ROCKPAPERSCISSORS-P03
 
 Third project from TOP curriculum.
 Objectives: 
--Implement Rock-Paper-Scissors.
+-Implement Rock-Paper-SCISSORSs.
 -Play the game from browser console, against the computer.
 
 Breaking the task:
@@ -10,7 +10,7 @@ Breaking the task:
 2. Create a function, for the user to pick a choice.
 3. Input the user choice in the console.
 4. Check inputted choice against computer choice.
-5. If user win, display eg: "You won! Rock beats scissors".
+5. If user win, display eg: "You won! Rock beats SCISSORSs".
 6. If computer win, display eg: "You lose! Paper beats rock". 
 
 You can see the result <a href="#">here</a>.
