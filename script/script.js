@@ -1,3 +1,9 @@
+    
+    
+        // play 5 rounds
+        for(let i=1;i<=5;i++)
+
+        { 
     // set initial values of score to 0 
     let computerScore = 0;
     let playerScore = 0;
@@ -99,4 +105,5 @@
             console.log("It's a draw");
           }
         }
+    }
         score();
