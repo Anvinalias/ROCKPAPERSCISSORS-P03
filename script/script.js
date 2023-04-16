@@ -27,3 +27,8 @@
         // make input space-insensitive.
         // make input case-insensitive by converting to uppercase.
         playerSelection=playerSelection.replace(/\s/g,'').toUpperCase();
+                // print both choices
+                console.log("Player choose:");
+                console.log(playerSelection);
+                let computerSelection=getComputerChoice();
+                console.log(computerSelection);
