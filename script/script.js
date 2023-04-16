@@ -30,7 +30,7 @@ function game()
                     return SCISSORS;
                 }
             }
-            // check both choices, print outcome and increment score accordingly
+            // compare both choices, print outcome and increment score accordingly
         function playRound(playerSelection,computerSelection)
             {
                 if (playerSelection==ROCK && computerSelection==ROCK)
@@ -78,15 +78,13 @@ function game()
             }
             // let player input their choice
             let playerSelection= (prompt("Select your choice among ROCK, PAPER, SCISSORS", ''));
-        // make input space-insensitive.
-        // make input case-insensitive by converting to uppercase.
+        // make input case and space-insensitive.
         playerSelection=playerSelection.replace(/\s/g,'').toUpperCase();
         // print both choices
         console.log("Player choose:");
         console.log(playerSelection);
         let computerSelection=getComputerChoice();
         console.log(computerSelection);
-        // function call and argument passing
         console.log(playRound(playerSelection,computerSelection));  
         
         // get final result of the game
@@ -104,6 +102,8 @@ function game()
           {
             console.log("It's a draw");
           }
+        //   get score
+          console.log("Gamescore:",playerScore,computerScore);
         }
       }
         score();
