@@ -1,4 +1,5 @@
-    
+function game()
+    { 
     
         // play 5 rounds
         for(let i=1;i<=5;i++)
@@ -107,3 +108,7 @@
         }
     }
         score();
+               // playagain?
+       console.log("To play again refresh or press F5");
+    }
+    game();
