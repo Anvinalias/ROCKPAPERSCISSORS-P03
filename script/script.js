@@ -24,3 +24,6 @@
 
                 // let player input their choice
         let playerSelection= (prompt("Select your choice among ROCK, PAPER, SCISSORS", ''));
+        // make input space-insensitive.
+        // make input case-insensitive by converting to uppercase.
+        playerSelection=playerSelection.replace(/\s/g,'').toUpperCase();
