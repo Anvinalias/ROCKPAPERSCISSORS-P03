@@ -1,3 +1,7 @@
+    // set initial values of score to 0 
+    let computerScore = 0;
+    let playerScore = 0;
+    
     const ROCK= "ROCK";
     const PAPER="PAPER";
     const SCISSORS="SCISSORS";
@@ -28,11 +32,13 @@
                     return("TIE! BOTH SIDE ROCK");
                 }
                 else if (playerSelection==ROCK && computerSelection==PAPER)
-                {   
+                {
+                    ++computerScore;
                     return("YOU LOSE! PAPER BEATS ROCK");
                 }
                 else if (playerSelection==ROCK && computerSelection==SCISSORS)
                 {
+                    ++playerScore;
                     return("YOU WON! ROCK BEATS SCISSORS");
                 }
                 else if (playerSelection==PAPER && computerSelection==PAPER)
@@ -41,14 +47,17 @@
                 }
                 else if (playerSelection==PAPER && computerSelection==SCISSORS)
                 {
+                    ++computerScore;
                     return("YOU LOSE! SCISSORS BEATS PAPER");
                 }
                 else if (playerSelection==PAPER && computerSelection==ROCK)
                 {
+                    ++playerScore;
                     return("YOU WON! PAPER BEATS ROCK");
                 }
                 else if (playerSelection==SCISSORS && computerSelection==ROCK)
                 {
+                    ++computerScore;
                     return("YOU LOSE! ROCK BEATS SCISSORS");
                 }
                 else if (playerSelection==SCISSORS && computerSelection==SCISSORS)
@@ -57,6 +66,7 @@
                 }
                 else if (playerSelection==SCISSORS && computerSelection==PAPER)
                 {
+                    ++playerScore;
                     return("YOU WON! SCISSORS BEATS PAPER");
                 }
             }
@@ -72,6 +82,3 @@
                 console.log(playerSelection);
                 let computerSelection=getComputerChoice();
                 console.log(computerSelection);
-
-                // function call and argument passing
-        console.log(playRound(playerSelection,computerSelection));  
