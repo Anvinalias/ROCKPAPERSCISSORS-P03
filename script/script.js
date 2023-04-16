@@ -1,3 +1,7 @@
+    const ROCK= "ROCK";
+    const PAPER="PAPER";
+    const SCISSORS="SCISSORS";
+
         // let computer choose randomly
         function getComputerChoice()
             {
