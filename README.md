@@ -13,4 +13,10 @@ Breaking the task:
 5. If user win, display eg: "You won! Rock beats SCISSORSs".
 6. If computer win, display eg: "You lose! Paper beats rock". 
 
+Update project: add a graphical interface
+
+1. Add a graphical interface for the game.
+2. Let the user choose their choice by clicking the option.
+3. Game end after any of the player reach 5 scores.
+
 You can see the result <a href="#">here</a>.
