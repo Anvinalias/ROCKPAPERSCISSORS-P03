@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,600;1,500&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif ;
+}
+
+
+
+h1{
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.live-result{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#choice-container{
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+button{
+    font-size: 30px;
+    font-weight: bold;
+    padding:8px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(100, 99, 99);
+}
+
+#text-container{
+    margin: 20px 30px;
+}
+
+.result{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.play-again{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
