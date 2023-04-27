@@ -17,6 +17,8 @@ function getComputerChoice() {
 }
 
 function game(userChoice) {
+    if(userScore < 5 && computerScore < 5){
+        
     let computerChoice = getComputerChoice();
     liveResult.textContent = playRound(userChoice, computerChoice)
     userPoint_span.textContent = userScore;
@@ -26,6 +28,10 @@ function game(userChoice) {
         result.textContent = endGame();
         playAgain.textContent = "PRESS F5 TO PLAYAGAIN"       
     }
+}
+else {
+    return "thanks for playing";
+}
 }
 
 function main(){
