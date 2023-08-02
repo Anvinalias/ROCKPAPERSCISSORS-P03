@@ -20,4 +20,4 @@ Update project: add GUI
 3. Game end after any of the player reach 5 scores.
 4. Display result of the game.
 
-You can see the result <a href="#">here</a>.
+You can see the result <a href="https://anvinalias.github.io/ROCKPAPERSCISSORS-P03/">here</a>.
