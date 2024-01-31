@@ -13,7 +13,7 @@ Breaking the task:
 5. If user win, display eg: "You won! Rock beats SCISSORSs".
 6. If computer win, display eg: "You lose! Paper beats rock". 
 
-Update project: add GUI
+Update project: add Graphical user interface
 
 1. Add a graphical user interface for the game.
 2. Let the user choose their choice by clicking the option.
